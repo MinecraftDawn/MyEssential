@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="MyEssential:jar">
+    <output-path>$PROJECT_DIR$/../../BungeeCord-1.12.2/Server2/plugins</output-path>
+    <root id="archive" name="MyEssential.jar">
+      <element id="module-output" name="MyEssential" />
+    </root>
+  </artifact>
+</component>

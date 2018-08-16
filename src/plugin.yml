@@ -1,0 +1,6 @@
+name: MyEssential
+version: 0.0.0
+main: myEssential.MyEssential
+
+commands:
+  tp:
