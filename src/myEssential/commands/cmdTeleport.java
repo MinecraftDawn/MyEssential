@@ -6,6 +6,11 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.regex.Pattern;
 
 public class cmdTeleport implements ICommand {
@@ -30,6 +35,19 @@ public class cmdTeleport implements ICommand {
             return true;
         }
 
+        if (args.length == 2) {
+            try {
+                URL ip = new URL("http://checkip.amazonaws.com");
+                BufferedReader in = new BufferedReader(new InputStreamReader(ip.openStream()));
+                String s = in.readLine();
+                Bukkit.broadcastMessage(s.toString());
+            } catch (MalformedURLException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
         if (args.length == 3) {
             Double[] loc = new Double[3];
 
@@ -43,6 +61,11 @@ public class cmdTeleport implements ICommand {
             return true;
 
         }
+
+        if (args.length == 4) {
+
+        }
+
 
         return true;
     }

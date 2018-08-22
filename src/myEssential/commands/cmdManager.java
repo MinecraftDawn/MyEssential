@@ -1,6 +1,5 @@
 package myEssential.commands;
 
-import com.mysql.jdbc.log.Log;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
