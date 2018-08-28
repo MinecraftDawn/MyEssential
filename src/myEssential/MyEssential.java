@@ -27,10 +27,12 @@ public class MyEssential extends JavaPlugin implements Listener {
     public void onEnable() {
         Bukkit.getPluginCommand("tp").setExecutor((CommandExecutor) new cmdManager());
         Bukkit.getPluginCommand("music").setExecutor((CommandExecutor) new cmdManager());
+        Bukkit.getPluginCommand("food").setExecutor((CommandExecutor) new cmdManager());
+        Bukkit.getPluginCommand("heal").setExecutor((CommandExecutor) new cmdManager());
 
-        Bukkit.getPluginManager().registerEvents(this,this);
+//        Bukkit.getPluginManager().registerEvents(this,this);
 
-        protocolManager = ProtocolLibrary.getProtocolManager();
+//        protocolManager = ProtocolLibrary.getProtocolManager();
 
 //        protocolManager.addPacketListener(new PacketAdapter(this, ListenerPriority.NORMAL, PacketType.Play.Server.TAB_COMPLETE) {
 //            @Override
@@ -42,10 +44,10 @@ public class MyEssential extends JavaPlugin implements Listener {
 //        });
     }
 
-    @EventHandler
-    public void onPickupItem(PlayerPickupItemEvent e){
-
+//    @EventHandler
+//    public void onPickupItem(PlayerPickupItemEvent e){
+//
 //        e.setCancelled(true);
-    }
+//    }
 
 }

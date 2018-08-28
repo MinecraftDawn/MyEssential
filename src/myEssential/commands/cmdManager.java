@@ -21,6 +21,18 @@ public class cmdManager implements CommandExecutor {
 
             return true;
         }
+        if (s.equals("heal")){
+            cmdHeal cmd = new cmdHeal();
+            cmd.run(sender, command, args);
+
+            return true;
+        }
+        if (s.equals("food")){
+            cmdFood cmd = new cmdFood();
+            cmd.run(sender, command, args);
+
+            return true;
+        }
         return true;
     }
 }

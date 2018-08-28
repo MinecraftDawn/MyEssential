@@ -35,18 +35,18 @@ public class cmdTeleport implements ICommand {
             return true;
         }
 
-        if (args.length == 2) {
-            try {
-                URL ip = new URL("http://checkip.amazonaws.com");
-                BufferedReader in = new BufferedReader(new InputStreamReader(ip.openStream()));
-                String s = in.readLine();
-                Bukkit.broadcastMessage(s.toString());
-            } catch (MalformedURLException e) {
-                e.printStackTrace();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
+//        if (args.length == 2) {
+//            try {
+//                URL ip = new URL("http://checkip.amazonaws.com");
+//                BufferedReader in = new BufferedReader(new InputStreamReader(ip.openStream()));
+//                String s = in.readLine();
+//                Bukkit.broadcastMessage(s.toString());
+//            } catch (MalformedURLException e) {
+//                e.printStackTrace();
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
+//        }
 
         if (args.length == 3) {
             Double[] loc = new Double[3];
