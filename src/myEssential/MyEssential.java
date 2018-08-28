@@ -26,6 +26,7 @@ public class MyEssential extends JavaPlugin implements Listener {
     @Override
     public void onEnable() {
         Bukkit.getPluginCommand("tp").setExecutor((CommandExecutor) new cmdManager());
+        Bukkit.getPluginCommand("music").setExecutor((CommandExecutor) new cmdManager());
 
         Bukkit.getPluginManager().registerEvents(this,this);
 
