@@ -29,6 +29,7 @@ public class MyEssential extends JavaPlugin implements Listener {
         Bukkit.getPluginCommand("music").setExecutor((CommandExecutor) new cmdManager());
         Bukkit.getPluginCommand("food").setExecutor((CommandExecutor) new cmdManager());
         Bukkit.getPluginCommand("heal").setExecutor((CommandExecutor) new cmdManager());
+        Bukkit.getPluginCommand("loadchunk").setExecutor((CommandExecutor) new cmdManager());
 
 //        Bukkit.getPluginManager().registerEvents(this,this);
 
